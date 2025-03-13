@@ -3,219 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Kishan Tamboli | HPC Researcher</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Kishan Tamboli - PhD Student in High-Performance Computing at IIT Bhilai">
+    <title>Kishan Tamboli | HPC Researcher</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
             --primary-color: #2c3e50;
             --secondary-color: #3498db;
-            --text-color: #34495e;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.8;
             margin: 0;
-            padding: 20px;
-            background: #f8f9fa;
-            color: var(--text-color);
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
         }
 
         header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
             text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 30px;
-            border-bottom: 3px solid var(--secondary-color);
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .profile-img {
-            width: 200px;
-            height: 200px;
+            width: 180px;
             border-radius: 50%;
-            margin: 20px auto;
-            border: 5px solid var(--secondary-color);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: 4px solid var(--secondary-color);
+            margin: -100px auto 1rem;
+            display: block;
         }
 
-        h1 {
+        h1, h2 {
             color: var(--primary-color);
-            margin: 10px 0;
-            font-size: 2.5em;
+            margin-bottom: 1.5rem;
         }
 
-        h2 {
+        h2 i {
+            margin-right: 0.8rem;
             color: var(--secondary-color);
-            margin: 25px 0 15px;
-            font-size: 1.8em;
         }
 
         .section {
-            margin-bottom: 30px;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-
-        .section:hover {
-            transform: translateY(-3px);
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        a {
-            color: var(--secondary-color);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: var(--primary-color);
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border-left: 4px solid var(--secondary-color);
+            background: #f8f9fa;
+            border-radius: 4px;
         }
 
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
+            gap: 1.5rem;
+            flex-wrap: wrap;
         }
 
         .social-links a {
-            font-size: 24px;
-            padding: 10px;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
-        .publication-item {
-            margin-bottom: 15px;
-            padding-left: 20px;
-            border-left: 3px solid var(--secondary-color);
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .publication-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .publication-list li {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .publication-list em {
+            color: #666;
+            font-style: normal;
+        }
+
+        .btn {
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0.5rem;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
         }
 
         @media (max-width: 768px) {
             .container {
-                padding: 15px;
-            }
-            
-            h1 {
-                font-size: 2em;
+                width: 95%;
+                padding: 1rem;
             }
             
             .profile-img {
-                width: 150px;
-                height: 150px;
+                width: 140px;
+                margin-top: -80px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
             }
         }
     </style>
 </head>
 <body>
+
+<header>
     <div class="container">
-        <header>
-            <img src="YOUR_PHOTO_PATH.jpg" alt="Kishan Tamboli" class="profile-img">
-            <h1>Kishan Tamboli</h1>
-            <p>PhD Candidate in High-Performance Computing<br>Indian Institute of Technology Bhilai</p>
-        </header>
-
-        <div class="section">
-            <h2><i class="fas fa-user"></i> About Me</h2>
-            <p>A passionate HPC researcher dedicated to solving complex scientific problems through high-performance computing. Currently pursuing PhD at IIT Bhilai with focus on parallel computing, performance optimization, and scalable algorithms.</p>
-        </div>
-
-        <div class="section">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-            <ul>
-                <li><strong>PhD in HPC</strong> - IIT Bhilai (Expected 2027)</li>
-                <li><strong>M.C.A.</strong> - Guru Ghasidas University (2021)</li>
-                <li><strong>B.C.A.</strong> - Bilaspur University (2018)</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2><i class="fas fa-flask"></i> Research Interests</h2>
-            <ul>
-                <li>Parallel & Distributed Computing</li>
-                <li>HPC Performance Optimization</li>
-                <li>Machine Learning for HPC</li>
-                <li>Scientific Computing Applications</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2><i class="fas fa-briefcase"></i> Experience</h2>
-            <p><strong>Project Associate I</strong> - IIT Bhilai (Apr 2021 - Jul 2022)</p>
-            <h3>Teaching Assistantships:</h3>
-            <ul>
-                <li>CS251: Intro to Programming (2023-2024)</li>
-                <li>MAL505: DBMS (2024)</li>
-                <li>CS516: Parallel Programming (2025-Present)</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2><i class="fas fa-tools"></i> Technical Skills</h2>
-            <div style="columns: 2;">
-                <ul>
-                    <li>C/C++/Python/Fortran</li>
-                    <li>MPI/OpenMP/CUDA</li>
-                    <li>Linux System Administration</li>
-                    <li>Performance Analysis Tools</li>
-                    <li>Scientific Software Development</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2><i class="fas fa-book"></i> Publications</h2>
-            <div class="publication-item">
-                <strong>LSTC: Large-Scale Triangle Counting on Single GPU</strong><br>
-                Journal of Parallel and Distributed Computing (Submitted)<br>
-                <em>Tamboli, K., Kesarwani, V., Sahoo, S.R., Jatala, V.</em>
-            </div>
-            <div class="publication-item">
-                <strong>Sparse Matrix Multiplication using Single GPU</strong><br>
-                IEEE HiPC 2023<br>
-                <em>Dogra, A., Tamboli, K., Jatala, V.</em>
-            </div>
-            <!-- Add other publications similarly -->
-        </div>
-
-        <div class="section">
-            <h2><i class="fas fa-handshake"></i> Connect</h2>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/kishan-tamboli-ab5b151a7" target="_blank" rel="noopener">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/KishantLab" target="_blank" rel="noopener">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://twitter.com/Kishantmbl" target="_blank" rel="noopener">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2><i class="fas fa-info-circle"></i> Additional</h2>
-            <ul>
-                <li>Fluent in English & Hindi</li>
-                <li>Open to collaboration opportunities</li>
-                <li>Strong team player & mentor</li>
-            </ul>
-        </div>
+        <h1>Kishan Tamboli</h1>
+        <p>PhD Student at IIT Bhilai | High-Performance Computing Researcher</p>
+        <a href="#contact" class="btn">
+            <i class="fas fa-download"></i> Download CV
+        </a>
     </div>
+</header>
+
+<main class="container">
+    <img src="your-profile-photo.jpg" alt="Kishan Tamboli, HPC Researcher at IIT Bhilai" class="profile-img">
+
+    <section class="section">
+        <h2><i class="fas fa-graduation-cap"></i>Education</h2>
+        <ul>
+            <li><strong>PhD in High-Performance Computing</strong><br>
+                Indian Institute of Technology Bhilai (Expected 2027)</li>
+            <li><strong>Master’s in Computer Application</strong><br>
+                Guru Ghasidas University Bilaspur C.G. (2021)</li>
+            <li><strong>Bachelor’s in Computer Application</strong><br>
+                Bilaspur University Bilaspur C.G. (2018)</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2><i class="fas fa-flask"></i>Research Interests</h2>
+        <ul>
+            <li>Parallel and distributed computing</li>
+            <li>Performance optimization</li>
+            <li>Scalable algorithms</li>
+            <li>Machine learning for HPC</li>
+            <li>HPC applications in science and engineering</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2><i class="fas fa-file-alt"></i>Publications</h2>
+        <ul class="publication-list">
+            <li>
+                <strong>Sparse Matrix Matrix Multiplication using single GPU</strong><br>
+                Apurva Dogra, Kishan Tamboli, Vishwesh Jatala<br>
+                <em>Student Research Symposium, 30th IEEE International Conference on High-Performance Computing, Data, and Analytics (HiPC), 2023</em>
+            </li>
+            <!-- Add other publications following the same structure -->
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2><i class="fas fa-handshake"></i>Connect</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/kishan-tamboli-ab5b151a7" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/KishantLab" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://scholar.google.com/citations?user=MMktmk4AAAAJ&hl=en" target="_blank">
+                <i class="fas fa-graduation-cap"></i> Google Scholar
+            </a>
+            <a href="https://twitter.com/Kishantmbl" target="_blank">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+        </div>
+    </section>
+</main>
+
 </body>
 </html>
